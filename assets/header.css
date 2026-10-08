@@ -1,0 +1,33 @@
+/* Shared site header for every Tally page (home, support, privacy):
+   announcement bar, then icon + name on the left and three links on the right.
+   On narrow screens the links drop to their own row instead of crowding the name. */
+:root { --on-accent: #FBF7EE; }
+@media (prefers-color-scheme: dark) { :root { --on-accent: #26251F; } }
+
+.announce { background: var(--ink); color: var(--on-accent); }
+.announce-inner {
+  max-width: 1080px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
+  padding: 11px 24px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; letter-spacing: .02em; line-height: 1.65; text-align: center;
+}
+.announce-inner a { color: var(--gold); font-weight: 600; text-decoration: none; }
+.announce-inner a:hover { text-decoration: underline; }
+
+header.site { position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 1px solid var(--rule); }
+header.site .inner {
+  max-width: 1080px; margin: 0 auto; padding: 12px 24px;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+header.site .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+header.site .brand img { width: 34px; height: 34px; border-radius: 8px; display: block; }
+header.site .brand span { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 21px; line-height: 1.65; color: var(--ink); }
+header.site nav { margin-left: auto; display: flex; gap: 22px; }
+header.site nav a { color: var(--ink-soft); text-decoration: none; font-size: 15px; font-weight: 500; line-height: 1.65; }
+header.site nav a:hover, header.site nav a:focus-visible, header.site nav a[aria-current] { color: var(--ink); }
+
+@media (max-width: 560px) {
+  .announce-inner { padding: 9px 16px; font-size: 11.5px; gap: 4px 8px; }
+  header.site .inner { padding-inline: 20px; }
+  header.site nav { margin-left: 0; width: 100%; gap: 22px; padding-top: 2px; }
+}

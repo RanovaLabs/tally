@@ -41,24 +41,6 @@
     line-height: 1.65;
   }
   .wrap { max-width: 640px; margin: 0 auto; padding: 40px 24px 96px; }
-  /* Header: same shape as the Chalkline site. Icon and name on the left,
-     three plain links on the right, and the links drop to their own row
-     on narrow screens instead of crowding the name. */
-  header.site { position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 1px solid var(--rule); }
-  header.site .inner {
-    max-width: 640px; margin: 0 auto; padding: 12px 24px;
-    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
-  }
-  header.site .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-  header.site .brand img { width: 34px; height: 34px; border-radius: 8px; display: block; }
-  header.site .brand span { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 21px; color: var(--ink); }
-  header.site nav { margin-left: auto; display: flex; gap: 22px; }
-  header.site nav a { color: var(--ink-soft); text-decoration: none; font-size: 15px; font-weight: 500; }
-  header.site nav a:hover, header.site nav a:focus-visible, header.site nav a[aria-current] { color: var(--ink); }
-  @media (max-width: 560px) {
-    header.site .inner { padding-inline: 20px; }
-    header.site nav { margin-left: 0; width: 100%; gap: 22px; padding-top: 2px; }
-  }
   h1 {
     font-family: "Fraunces", Georgia, serif;
     font-weight: 600;
@@ -117,9 +99,17 @@
   }
 </style>
 <link rel="stylesheet" href="/tally/assets/ranova-frame.css">
+<link rel="stylesheet" href="/tally/assets/header.css">
 </head>
 <body>
-  <header class="site"><div class="inner">
+<div class="announce">
+  <div class="announce-inner">
+    <span>&#127881; Tally is live on the App Store</span>
+    <a href="https://apps.apple.com/app/id6808044470">Download free &#8594;</a>
+  </div>
+</div>
+
+<header class="site"><div class="inner">
   <a class="brand" href="/tally/"><img src="/tally/assets/icon.png" alt=""><span>Tally</span></a>
   <nav aria-label="Site">
     <a href="/tally/">Home</a>
