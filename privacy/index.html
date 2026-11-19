@@ -100,19 +100,29 @@
   <div class="wrap">
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 29, 2026</p>
+    <p class="updated">Last updated: November 19, 2026</p>
 
     <p class="lead">Tally is built to work without collecting data about you or your family beyond what the app needs to function. This page explains exactly what that means.</p>
 
     <p>This policy covers Tally on iPhone, iPad, and Android.</p>
 
     <h2>What Tally stores</h2>
-    <p>The behavior, reward, and household information you enter — including any proof photos you attach to a moment — is stored on your device. We do not have access to it, cannot see it, and do not store a copy of it on any server we operate.</p>
+    <p>The behavior, reward, and household information you enter — including any proof photos you attach to a moment — is stored on your device. Unless you turn on co-parent sharing (see below), we do not have access to it, cannot see it, and do not store a copy of it on any server we operate.</p>
     <ul>
       <li><strong>iPhone and iPad:</strong> if you enable iCloud sync, a copy is also kept in your own private iCloud account.</li>
       <li><strong>Android:</strong> if backup is turned on in your device settings, Android includes Tally's data in your device backup in your Google account, so it can be restored on a new phone. That backup is managed by Google under your account; we cannot access it.</li>
     </ul>
     <p>Backup and export files you create in Tally's Settings go only where you choose to save or share them.</p>
+
+    <h2>Sharing with a co-parent (optional)</h2>
+    <p>Co-parent sharing is off by default. If you turn it on, so that another parent can see and update the same household from their own phone (iPhone or Android), Tally stores a shared copy of that household on servers run by Google (Firebase Authentication and Cloud Firestore), so that both phones can stay in step. This is the only case in which Tally keeps your household's information off your own devices.</p>
+    <ul>
+      <li><strong>What is shared:</strong> the household name and settings, your children's names (and birthdate, if you entered one), behavior templates, logged moments and any notes, goals, redemptions, and the display names of the parents. Proof photos and the Kid Mode PIN are not uploaded; they stay on the phone that created them.</li>
+      <li><strong>Signing in:</strong> sharing needs a sign-in so each parent is identified. iPhone and iPad use Sign in with Apple; Android uses Google. We receive a user identifier and the display name you choose, not your password.</li>
+      <li><strong>Who can see it:</strong> only the parents in that household, who are admitted with a single-use invite code that expires after 48 hours. Access is enforced by the database's security rules.</li>
+      <li><strong>No advertising or selling:</strong> shared data is used only to run sharing. It is never used for advertising or tracking, and is never sold.</li>
+    </ul>
+    <p>You can stop at any time. Stopping sharing deletes the shared copy from our servers and every phone keeps the information it already has. A co-parent can leave a shared household, and the owner can remove a co-parent, which immediately ends that person's access.</p>
 
     <h2>Permissions</h2>
     <p>Tally asks for access only when you use a feature that needs it:</p>
@@ -136,7 +146,7 @@
     </ul>
 
     <h2>Deleting your data</h2>
-    <p>Settings › Delete account removes every child, logged moment, goal, redemption, and photo from your device; uninstalling Tally removes them too. On iPhone and iPad with iCloud sync on, the deletion also syncs to your iCloud account. On Android, your Google device backup is replaced the next time your phone backs up, or you can remove it in your Google account's backup settings. Because we never hold your data, there is nothing stored on our side to delete.</p>
+    <p>Settings › Delete account removes every child, logged moment, goal, redemption, and photo from your device; uninstalling Tally removes them too. On iPhone and iPad with iCloud sync on, the deletion also syncs to your iCloud account. On Android, your Google device backup is replaced the next time your phone backs up, or you can remove it in your Google account's backup settings. If you used co-parent sharing, Settings › Delete account also removes the shared copy from our servers and deletes your sign-in. If you never turned sharing on, we hold nothing about you, so there is nothing stored on our side to delete.</p>
 
     <h2>Children's privacy</h2>
     <p>Tally is designed for use by parents and guardians. Any information about a child (name, logged behavior) is entered by the parent, stored as described above, and never collected by us directly from a child.</p>
