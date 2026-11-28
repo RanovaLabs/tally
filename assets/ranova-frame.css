@@ -14,3 +14,5 @@
 
 /* "Ranova Labs" link at the end of each app site's header menu, set apart by a hairline. */
 header.site nav a.rl-home { padding-left: 20px; border-left: 1px solid color-mix(in srgb, currentColor 30%, transparent); }
+
+.rl-foot .rl-tip a { text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
